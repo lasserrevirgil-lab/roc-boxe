@@ -11,7 +11,27 @@
       "Bash(rm -rf \"roc-boxe\")",
       "Bash(rm -rf \"{assets\")",
       "Bash(rm -f paiement.html galerie.html config.js js/app.js)",
-      "Bash(rmdir assets/icons)"
+      "Bash(rmdir assets/icons)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
+      "PowerShell(gh --version 2>&1)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(cmdkey /list)",
+      "PowerShell(cmdkey /delete:LegacyGeneric:target=git:https://github.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://lasserrevirgil-lab.github.io/roc-boxe/\")",
+      "WebFetch(domain:lasserrevirgil-lab.github.io)",
+      "mcp__claude-in-chrome__navigate",
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "WebFetch(domain:boxrec.com)",
+      "Bash(find \"C:\\\\Users\\\\lucia\\\\AppData\\\\Local\\\\Temp\\\\claude\" -newer \"C:\\\\Users\\\\lucia\\\\Desktop\\\\Claude\\\\roc-boxe\\\\club.html\" -type f 2>/dev/null | head -20)",
+      "Bash(find \"C:\\\\Users\\\\lucia\\\\AppData\\\\Local\\\\Temp\" -maxdepth 4 -type f \\\\\\( -iname \"*.jpg\" -o -iname \"*.jpeg\" -o -iname \"*.png\" -o -iname \"*.webp\" \\\\\\) -mmin -30 2>/dev/null)",
+      "Bash(python3 -c \"from PIL import Image; print\\('ok'\\)\")",
+      "Bash(python -c \"from PIL import Image; print\\('ok'\\)\")",
+      "Bash(python \"C:\\\\Users\\\\lucia\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-lucia-Desktop-Claude-roc-boxe\\\\8b264afc-ff46-4d8d-a2b8-5c202ceff968\\\\scratchpad\\\\make_logo_variants.py\")",
+      "Bash(python -c ' *)"
     ]
   }
 }
