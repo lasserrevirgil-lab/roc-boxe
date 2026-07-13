@@ -4,7 +4,14 @@
       "Bash(git init *)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "WebFetch(domain:www.helloasso.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://www.helloasso.com/associations/roc-boxe\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://www.helloasso.com/associations/roc-boxe/adhesions/saison-2025-2026-bea-7-10\")",
+      "Bash(rm -rf \"roc-boxe\")",
+      "Bash(rm -rf \"{assets\")",
+      "Bash(rm -f paiement.html galerie.html config.js js/app.js)",
+      "Bash(rmdir assets/icons)"
     ]
   }
 }
