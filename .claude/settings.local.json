@@ -31,7 +31,9 @@
       "Bash(python3 -c \"from PIL import Image; print\\('ok'\\)\")",
       "Bash(python -c \"from PIL import Image; print\\('ok'\\)\")",
       "Bash(python \"C:\\\\Users\\\\lucia\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-lucia-Desktop-Claude-roc-boxe\\\\8b264afc-ff46-4d8d-a2b8-5c202ceff968\\\\scratchpad\\\\make_logo_variants.py\")",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(python \"C:\\\\Users\\\\lucia\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-lucia-Desktop-Claude-roc-boxe\\\\8b264afc-ff46-4d8d-a2b8-5c202ceff968\\\\scratchpad\\\\process_new_logo.py\")",
+      "Bash(python \"C:\\\\Users\\\\lucia\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-lucia-Desktop-Claude-roc-boxe\\\\8b264afc-ff46-4d8d-a2b8-5c202ceff968\\\\scratchpad\\\\fix_favicon.py\")"
     ]
   }
 }
