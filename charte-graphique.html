@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charte Graphique — ROC Boxe Royan</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ============================================================
+       CHARTE GRAPHIQUE — styles propres à ce document
+       Ce document est un usage volontairement "riche" du système
+       visuel du site : il sert lui-même de démonstration.
+       ============================================================ */
+
+    .charte-hero {
+      background: var(--noir);
+      color: #fff;
+      padding: 4rem 0 3rem;
+      text-align: center;
+    }
+    .charte-hero img { margin: 0 auto 1.5rem; height: 90px; }
+    .charte-hero .kicker {
+      display: inline-block;
+      background: var(--rouge);
+      color: #fff;
+      font-family: var(--police-titre);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-radius: var(--rayon);
+      margin-bottom: 1rem;
+    }
+    .charte-hero h1 { color: #fff; font-size: clamp(2rem, 5vw, 3rem); }
+    .charte-hero p { color: #ccc; max-width: 560px; margin: 1rem auto 0; }
+
+    .charte-nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: #fff;
+      border-bottom: 1px solid var(--gris-clair);
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .charte-nav .container { display: flex; gap: 0.25rem; padding-top: 0.6rem; padding-bottom: 0.6rem; }
+    .charte-nav a {
+      font-family: var(--police-titre);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--noir);
+      padding: 0.4rem 0.75rem;
+      border-radius: var(--rayon);
+      text-decoration: none;
+    }
+    .charte-nav a:hover { background: var(--gris-clair); text-decoration: none; }
+
+    .charte-section { padding: 3.5rem 0; border-bottom: 1px solid var(--gris-clair); }
+    .charte-section:last-of-type { border-bottom: none; }
+    .charte-eyebrow {
+      font-family: var(--police-titre);
+      color: var(--rouge);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .charte-section h2 { margin-bottom: 0.5rem; }
+    .charte-intro { color: var(--gris); max-width: 640px; margin-bottom: 2rem; }
+
+    /* Palette */
+    .swatch-grille {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+    .swatch {
+      border-radius: var(--rayon);
+      overflow: hidden;
+      box-shadow: var(--ombre);
+      background: #fff;
+    }
+    .swatch-couleur { height: 100px; }
+    .swatch-corps { padding: 1rem 1.1rem; }
+    .swatch-corps .nom { font-family: var(--police-titre); text-transform: uppercase; letter-spacing: 0.04em; font-size: 1rem; margin-bottom: 0.3rem; }
+    .swatch-corps code {
+      display: block;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--gris);
+      margin-bottom: 0.15rem;
+    }
+    .swatch-corps .usage { font-size: 0.85rem; color: var(--gris); margin-top: 0.5rem; }
+
+    /* Typographie */
+    .type-specimen { background: #fff; border-radius: var(--rayon); box-shadow: var(--ombre); padding: 2rem; margin-bottom: 1.5rem; }
+    .type-specimen .meta { font-family: 'Roboto Mono', monospace; font-size: 0.8rem; color: var(--gris); margin-bottom: 0.5rem; text-transform: none; letter-spacing: 0; }
+    .type-echelle > div { display: flex; align-items: baseline; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--gris-clair); }
+    .type-echelle > div:last-child { border-bottom: none; }
+    .type-echelle .tag { font-family: 'Roboto Mono', monospace; font-size: 0.75rem; color: var(--gris); width: 90px; flex-shrink: 0; }
+
+    /* Logo */
+    .logo-demo {
+      border-radius: var(--rayon);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      box-shadow: var(--ombre);
+    }
+    .logo-demo.fond-clair { background: #fff; }
+    .logo-demo.fond-sombre { background: var(--noir); }
+    .logo-demo.fond-rouge { background: var(--rouge); }
+    .logo-demo img { height: 90px; width: auto; }
+    .logo-caption { text-align: center; font-size: 0.85rem; color: var(--gris); margin-top: 0.6rem; }
+
+    .regle-liste { list-style: none; }
+    .regle-liste li { padding: 0.5rem 0; border-bottom: 1px solid var(--gris-clair); font-size: 0.94rem; }
+    .regle-liste li:last-child { border-bottom: none; }
+    .regle-ok::before { content: '✓  '; color: #2e7d32; font-weight: 700; }
+    .regle-non::before { content: '✕  '; color: var(--rouge); font-weight: 700; }
+
+    /* Composants */
+    .composant-demo { background: #fff; border-radius: var(--rayon); box-shadow: var(--ombre); padding: 1.75rem; }
+    .composant-demo h4 { font-family: var(--police-titre); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.04em; color: var(--gris); margin-bottom: 1rem; }
+    .composant-rangee { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+
+    /* Voix */
+    .voix-grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+    .voix-carte { background: #fff; border-radius: var(--rayon); box-shadow: var(--ombre); padding: 1.5rem; }
+    .voix-carte .mot { font-family: var(--police-titre); color: var(--rouge); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 0.4rem; }
+
+    /* Fichiers */
+    .fichier-liste { list-style: none; }
+    .fichier-liste li {
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+      padding: 0.85rem 1.1rem; background: #fff; border-radius: var(--rayon); box-shadow: var(--ombre);
+      margin-bottom: 0.75rem; font-size: 0.92rem;
+    }
+    .fichier-liste code { font-family: 'Roboto Mono', monospace; font-size: 0.85rem; }
+    .fichier-liste .tag-usage { font-size: 0.78rem; color: var(--gris); }
+
+    .avertissement {
+      background: #fff3cd; border: 1px solid #ffc107; border-radius: var(--rayon);
+      padding: 1rem 1.25rem; font-size: 0.9rem; margin-top: 1.5rem;
+    }
+
+    @media print {
+      .charte-nav { display: none; }
+      .charte-hero { background: var(--noir) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .charte-section { break-inside: avoid; border-bottom: none; }
+      .swatch-couleur, .logo-demo.fond-sombre, .logo-demo.fond-rouge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       EN-TÊTE
+       ============================================================ -->
+  <div class="charte-hero">
+    <div class="container">
+      <img src="assets/images/logo_roc_boxe_blanc_transparent@3x.png" alt="Logo ROC Boxe" />
+      <span class="kicker">Document interne · bénévoles &amp; partenaires</span>
+      <h1>Charte Graphique</h1>
+      <p>Les règles visuelles du ROC Boxe Royan : logo, couleurs, typographies et usages.
+         À suivre pour tout nouveau support — site, réseaux sociaux, flyers, affiches, textiles.</p>
+    </div>
+  </div>
+
+  <nav class="charte-nav">
+    <div class="container">
+      <a href="#logo">Logo</a>
+      <a href="#couleurs">Couleurs</a>
+      <a href="#typographie">Typographie</a>
+      <a href="#composants">Composants</a>
+      <a href="#photo">Photographie</a>
+      <a href="#voix">Ton &amp; voix</a>
+      <a href="#fichiers">Fichiers</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       LOGO
+       ============================================================ -->
+  <section class="charte-section" id="logo">
+    <div class="container">
+      <div class="charte-eyebrow">01 — Identité</div>
+      <h2>Le logo</h2>
+      <p class="charte-intro">
+        Le logo ROC Boxe associe un gant de boxe dessiné à une plaque ovale portant le nom du club.
+        Il existe en trois usages selon le fond sur lequel il est posé.
+      </p>
+
+      <div class="grille grille-3">
+        <div>
+          <div class="logo-demo fond-clair">
+            <img src="assets/images/logo_roc_boxe_noir_transparent@3x.png" alt="Logo ROC Boxe, version noire" />
+          </div>
+          <p class="logo-caption"><strong>Version noire</strong><br>Sur fond blanc ou clair</p>
+        </div>
+        <div>
+          <div class="logo-demo fond-sombre">
+            <img src="assets/images/logo_roc_boxe_blanc_transparent@3x.png" alt="Logo ROC Boxe, version blanche" />
+          </div>
+          <p class="logo-caption"><strong>Version blanche</strong><br>Sur fond noir ou photo sombre</p>
+        </div>
+        <div>
+          <div class="logo-demo fond-rouge">
+            <img src="assets/images/logo_roc_boxe_blanc_transparent@3x.png" alt="Logo ROC Boxe, version blanche sur rouge" />
+          </div>
+          <p class="logo-caption"><strong>Version blanche</strong><br>Sur fond rouge de marque</p>
+        </div>
+      </div>
+
+      <div class="grille grille-2" style="margin-top:2rem;gap:2rem;">
+        <div>
+          <h3 style="margin-bottom:0.75rem;">À faire</h3>
+          <ul class="regle-liste">
+            <li class="regle-ok">Toujours utiliser une version transparente (noire ou blanche)</li>
+            <li class="regle-ok">Laisser un espace de respiration autour du logo (au moins la hauteur du gant)</li>
+            <li class="regle-ok">Conserver les proportions d'origine</li>
+            <li class="regle-ok">Utiliser la version noire sur fond clair, blanche sur fond sombre</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin-bottom:0.75rem;">À éviter</h3>
+          <ul class="regle-liste">
+            <li class="regle-non">Déformer, étirer ou faire pivoter le logo</li>
+            <li class="regle-non">Recolorer le logo dans une autre couleur que noir/blanc</li>
+            <li class="regle-non">Poser le logo noir sur un fond sombre (ou blanc sur fond clair)</li>
+            <li class="regle-non">Ajouter une ombre portée, un contour ou un effet 3D</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="avertissement">
+        ⚠️ <strong>Limite actuelle :</strong> le fichier source du logo est une image basse résolution
+        (254 × 178&nbsp;px à l'origine). Les versions transparentes fournies ici sont ré-agrandies numériquement
+        (×3) pour un usage web confortable, mais restent limitées pour un très grand format (banderole, roll-up,
+        panneau). Pour ces usages, il faudra retrouver ou refaire un fichier vectoriel (SVG/AI/EPS) du logo.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COULEURS
+       ============================================================ -->
+  <section class="charte-section section-gris" id="couleurs">
+    <div class="container">
+      <div class="charte-eyebrow">02 — Palette</div>
+      <h2>Les couleurs</h2>
+      <p class="charte-intro">
+        Une palette simple et contrastée, pensée pour un club de boxe : rouge combatif, noir affirmé,
+        blanc cassé apaisé, et un bleu (couleur du ring) réservé aux accents secondaires.
+      </p>
+
+      <div class="swatch-grille">
+        <div class="swatch">
+          <div class="swatch-couleur" style="background:#CC2200;"></div>
+          <div class="swatch-corps">
+            <div class="nom">Rouge</div>
+            <code>#CC2200</code>
+            <code>RGB 204, 34, 0</code>
+            <p class="usage">Couleur principale de marque. Boutons d'action, accents, liens, éléments à mettre en avant.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-couleur" style="background:#991a00;"></div>
+          <div class="swatch-corps">
+            <div class="nom">Rouge foncé</div>
+            <code>#991A00</code>
+            <code>RGB 153, 26, 0</code>
+            <p class="usage">État survol/actif des éléments rouges. Jamais utilisé seul.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-couleur" style="background:#1a1a1a;"></div>
+          <div class="swatch-corps">
+            <div class="nom">Noir</div>
+            <code>#1A1A1A</code>
+            <code>RGB 26, 26, 26</code>
+            <p class="usage">En-tête, pied de page, fonds de section forts, textes sombres.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-couleur" style="background:#F5F5F5;border:1px solid #eee;"></div>
+          <div class="swatch-corps">
+            <div class="nom">Blanc cassé</div>
+            <code>#F5F5F5</code>
+            <code>RGB 245, 245, 245</code>
+            <p class="usage">Fond par défaut des pages. Jamais du blanc pur (#FFFFFF) en grande surface.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-couleur" style="background:#1E5FA8;"></div>
+          <div class="swatch-corps">
+            <div class="nom">Bleu</div>
+            <code>#1E5FA8</code>
+            <code>RGB 30, 95, 168</code>
+            <p class="usage">Accent secondaire seulement (badges, focus clavier, liseré d'info). Jamais dominant.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-couleur" style="background:#555555;"></div>
+          <div class="swatch-corps">
+            <div class="nom">Gris</div>
+            <code>#555555</code>
+            <code>RGB 85, 85, 85</code>
+            <p class="usage">Texte secondaire, légendes, informations moins importantes.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-couleur" style="background:#eeeeee;"></div>
+          <div class="swatch-corps">
+            <div class="nom">Gris clair</div>
+            <code>#EEEEEE</code>
+            <code>RGB 238, 238, 238</code>
+            <p class="usage">Fonds de sections alternées, séparateurs discrets.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="charte-intro" style="margin-top:1.75rem;">
+        <strong>Règle de proportion :</strong> environ 60&nbsp;% noir/blanc cassé, 30&nbsp;% blanc/gris clair,
+        10&nbsp;% rouge. Le rouge doit rester rare et donc percutant — s'il est partout, il perd son impact.
+        Le bleu est un accent ponctuel, jamais une couleur de fond principale.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TYPOGRAPHIE
+       ============================================================ -->
+  <section class="charte-section" id="typographie">
+    <div class="container">
+      <div class="charte-eyebrow">03 — Typographie</div>
+      <h2>Les polices</h2>
+      <p class="charte-intro">
+        Deux polices Google Fonts, gratuites et déjà chargées sur le site — à réutiliser sur tous les supports
+        pour garder la même signature visuelle.
+      </p>
+
+      <div class="type-specimen">
+        <div class="meta">Oswald — 400 / 600 / 700 — utilisée pour tous les titres, en majuscules</div>
+        <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:2.6rem;text-transform:uppercase;letter-spacing:0.03em;line-height:1.15;">
+          Roc Boxe Royan
+        </div>
+      </div>
+
+      <div class="type-specimen">
+        <div class="meta">Open Sans — 400 / 600 — utilisée pour tous les textes courants</div>
+        <p style="font-family:'Open Sans',sans-serif;font-size:1.05rem;">
+          Du débutant au compétiteur, de 7 à 77 ans. ROC Boxe vous accueille dans une salle moderne,
+          avec des entraîneurs passionnés et une ambiance associative unique.
+        </p>
+      </div>
+
+      <div class="type-specimen">
+        <div class="meta">Échelle des tailles (site web)</div>
+        <div class="type-echelle">
+          <div><span class="tag">H1</span><span style="font-family:var(--police-titre);font-weight:700;text-transform:uppercase;font-size:clamp(2rem,5vw,3.5rem);">Titre principal</span></div>
+          <div><span class="tag">H2</span><span style="font-family:var(--police-titre);font-weight:700;text-transform:uppercase;font-size:clamp(1.6rem,3.5vw,2.4rem);">Titre de section</span></div>
+          <div><span class="tag">H3</span><span style="font-family:var(--police-titre);font-weight:700;text-transform:uppercase;font-size:clamp(1.2rem,2.5vw,1.6rem);">Sous-titre</span></div>
+          <div><span class="tag">Texte</span><span style="font-family:var(--police-texte);font-size:1rem;">Paragraphe courant, 16px, interligne 1.65</span></div>
+          <div><span class="tag">Petit</span><span style="font-family:var(--police-texte);font-size:0.85rem;color:var(--gris);">Légendes, mentions, notes</span></div>
+        </div>
+      </div>
+
+      <p class="charte-intro" style="margin-top:1rem;">
+        <strong>Règle :</strong> Oswald est toujours en majuscules pour les titres (letter-spacing léger).
+        Open Sans n'est jamais mis en majuscules — cela nuit à la lisibilité sur de longs textes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COMPOSANTS
+       ============================================================ -->
+  <section class="charte-section section-gris" id="composants">
+    <div class="container">
+      <div class="charte-eyebrow">04 — Composants</div>
+      <h2>Boutons &amp; badges</h2>
+      <p class="charte-intro">Les éléments d'interface du site, réutilisables tels quels sur tout nouveau support numérique.</p>
+
+      <div class="grille grille-2" style="gap:1.5rem;">
+        <div class="composant-demo">
+          <h4>Boutons</h4>
+          <div class="composant-rangee">
+            <a class="btn btn-rouge" href="#">Action principale</a>
+            <a class="btn btn-contour" href="#">Action secondaire</a>
+          </div>
+        </div>
+        <div class="composant-demo" style="background:var(--noir);">
+          <h4 style="color:#ccc;">Boutons sur fond sombre</h4>
+          <div class="composant-rangee">
+            <a class="btn btn-blanc" href="#">Action principale</a>
+          </div>
+        </div>
+        <div class="composant-demo">
+          <h4>Badges</h4>
+          <div class="composant-rangee">
+            <span class="badge badge-rouge">Pros / Élites</span>
+            <span class="badge badge-bleu">Loisir</span>
+            <span class="badge badge-vert">Enfants</span>
+            <span class="badge badge-orange">Ados</span>
+            <span class="badge badge-gris">Complet</span>
+          </div>
+        </div>
+        <div class="composant-demo">
+          <h4>Carte</h4>
+          <div class="carte" style="max-width:240px;">
+            <div style="height:110px;background:var(--gris-clair);display:flex;align-items:center;justify-content:center;color:var(--gris);font-size:0.8rem;">photo</div>
+            <div class="carte-corps">
+              <h3 style="font-size:1.1rem;">Titre de carte</h3>
+              <p style="font-size:0.88rem;">Texte descriptif court.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PHOTOGRAPHIE
+       ============================================================ -->
+  <section class="charte-section" id="photo">
+    <div class="container">
+      <div class="charte-eyebrow">05 — Photographie</div>
+      <h2>Style photo</h2>
+      <p class="charte-intro">
+        Les photos du club montrent l'action réelle en salle et en compétition — pas de banques d'images.
+        C'est ce qui fait la crédibilité du club : à conserver sur tout futur support.
+      </p>
+
+      <div class="grille grille-4" style="margin-bottom:1.5rem;">
+        <img src="assets/images/combat_arthur.jpg" alt="Exemple style photo : combat" style="border-radius:4px;height:150px;object-fit:cover;" />
+        <img src="assets/images/entrainement_1.jpg" alt="Exemple style photo : entraînement" style="border-radius:4px;height:150px;object-fit:cover;" />
+        <img src="assets/images/petits_collectif.jpg" alt="Exemple style photo : enfants" style="border-radius:4px;height:150px;object-fit:cover;" />
+        <img src="assets/images/remise_medailles.jpg" alt="Exemple style photo : podium" style="border-radius:4px;height:150px;object-fit:cover;" />
+      </div>
+
+      <div class="grille grille-2" style="gap:2rem;">
+        <div>
+          <h3 style="margin-bottom:0.75rem;">À privilégier</h3>
+          <ul class="regle-liste">
+            <li class="regle-ok">Photos prises en salle, en compétition ou en gala — jamais de stock générique</li>
+            <li class="regle-ok">Action et mouvement (frappe, sparring, effort) plutôt que poses figées</li>
+            <li class="regle-ok">Lumière contrastée, ambiance de salle ou de ring</li>
+            <li class="regle-ok">Diversité des membres (âges, niveaux, genres) représentée</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin-bottom:0.75rem;">À éviter</h3>
+          <ul class="regle-liste">
+            <li class="regle-non">Banques d'images / photos stock avec des acteurs</li>
+            <li class="regle-non">Filtres colorés qui dénaturent les couleurs de marque</li>
+            <li class="regle-non">Photos floues, mal cadrées ou trop compressées</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TON & VOIX
+       ============================================================ -->
+  <section class="charte-section section-gris" id="voix">
+    <div class="container">
+      <div class="charte-eyebrow">06 — Ton &amp; voix</div>
+      <h2>Comment on parle</h2>
+      <p class="charte-intro">Le ton du club à l'écrit — cohérent avec ses valeurs affichées sur la page « Le Club ».</p>
+
+      <div class="voix-grille">
+        <div class="voix-carte">
+          <div class="mot">Direct</div>
+          <p style="font-size:0.9rem;">Des phrases courtes, un vocabulaire simple. On s'adresse à tout le monde, pas qu'aux initiés de la boxe.</p>
+        </div>
+        <div class="voix-carte">
+          <div class="mot">Chaleureux</div>
+          <p style="font-size:0.9rem;">On tutoie l'esprit associatif : convivialité, bénévolat, entraide. Jamais froid ou institutionnel.</p>
+        </div>
+        <div class="voix-carte">
+          <div class="mot">Fier, sans arrogance</div>
+          <p style="font-size:0.9rem;">On peut mettre en avant les champions du club — toujours avec les faits, jamais en rabaissant les autres clubs.</p>
+        </div>
+        <div class="voix-carte">
+          <div class="mot">Inclusif</div>
+          <p style="font-size:0.9rem;">« Pour tous, de 7 à 77 ans » : le message s'adresse aux débutants autant qu'aux compétiteurs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FICHIERS
+       ============================================================ -->
+  <section class="charte-section" id="fichiers">
+    <div class="container">
+      <div class="charte-eyebrow">07 — Ressources</div>
+      <h2>Fichiers à réutiliser</h2>
+      <p class="charte-intro">Tous les fichiers sont dans le dossier <code>assets/images/</code> du site.</p>
+
+      <ul class="fichier-liste">
+        <li>
+          <code>logo_roc_boxe_noir_transparent@3x.png</code>
+          <span class="tag-usage">Logo noir, fond transparent — fonds clairs</span>
+        </li>
+        <li>
+          <code>logo_roc_boxe_blanc_transparent@3x.png</code>
+          <span class="tag-usage">Logo blanc, fond transparent — fonds sombres</span>
+        </li>
+        <li>
+          <code>logo_roc_boxe.png</code>
+          <span class="tag-usage">Fichier historique, fond blanc — à éviter pour les nouveaux supports</span>
+        </li>
+      </ul>
+
+      <p class="charte-intro" style="margin-top:1.5rem;">
+        <strong>Polices :</strong> chargées gratuitement depuis Google Fonts —
+        <code style="font-family:'Roboto Mono',monospace;font-size:0.85rem;">fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&amp;family=Open+Sans:wght@400;600</code>.
+        Pour un usage hors-web (Word, Canva, impression), les deux polices se téléchargent gratuitement sur
+        <a href="https://fonts.google.com" target="_blank" rel="noopener">fonts.google.com</a>.
+      </p>
+
+      <div class="avertissement">
+        📌 <strong>Reste à faire :</strong> le club n'a pas encore de favicon (la petite icône affichée dans
+        l'onglet du navigateur) ni de version « icône seule » du logo (sans le texte), utile pour les réseaux
+        sociaux (photo de profil carrée). À prévoir si un fichier vectoriel du logo est retrouvé.
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bas" style="border-top:none;padding-top:0;">
+        <span>Charte graphique ROC Boxe Royan — Document vivant, à mettre à jour si l'identité évolue.</span>
+        <a href="index.html" style="color:var(--rouge);">← Retour au site</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
