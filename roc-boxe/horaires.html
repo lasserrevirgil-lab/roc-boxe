@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horaires et lieux — ROC Boxe Royan</title>
+  <meta name="description" content="Horaires des entraînements du ROC Boxe Royan : enfants, ados, adultes, loisirs et compétiteurs. Adresse de la salle et accès.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Horaires et lieux — ROC Boxe Royan">
+  <meta property="og:description" content="Tous les créneaux d'entraînement et l'adresse de la salle.">
+  <meta property="og:image" content="https://www.rocboxe-royan.fr/assets/images/og-image.jpg">
+  <meta property="og:url" content="https://www.rocboxe-royan.fr/horaires.html">
+  <meta name="theme-color" content="#16161a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Horaires et lieux</h1>
+        <p>Retrouvez tous les créneaux d'entraînement par catégorie ainsi que l'adresse de la salle.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Entraînements</span>
+          <h2>Les créneaux de la semaine</h2>
+          <p>Les horaires se modifient dans le fichier <code>config.js</code>.</p>
+        </div>
+        <!-- Tableau généré depuis config.js > schedules -->
+        <div id="schedule"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Où nous trouver</span>
+          <h2>Adresse de la salle</h2>
+        </div>
+        <div class="contact-grid">
+          <div id="contact-info"></div>
+          <div id="contact-map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

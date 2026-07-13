@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Galerie — ROC Boxe Royan</title>
+  <meta name="description" content="Contactez le ROC Boxe Royan. Formulaire de contact, email, téléphone. Galerie photos du club." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/logo_roc_boxe.png" alt="Logo ROC Boxe" />
+        <span>ROC Boxe</span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="club.html">Le Club</a></li>
+          <li><a href="horaires.html">Horaires</a></li>
+          <li><a href="inscriptions.html">Inscriptions</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div style="background:var(--noir);padding:3rem 0;text-align:center;">
+    <div class="container">
+      <h1 style="color:#fff;">Contact & Galerie</h1>
+      <p style="color:#aaa;margin-top:0.5rem;">Écrivez-nous ou parcourez nos photos</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="grille grille-2" style="gap:3rem;align-items:start;">
+
+        <!-- Formulaire -->
+        <div>
+          <h2 style="margin-bottom:1.5rem;">Nous écrire</h2>
+
+          <!-- ============================================
+               FORMULAIRE DE CONTACT
+               
+               Ce formulaire utilise mailto: (aucun serveur requis).
+               Le clic ouvre simplement le logiciel mail de l'utilisateur.
+               
+               Alternative : si vous passez sur Netlify, remplacez
+               <form action="mailto:..." par <form netlify name="contact"
+               et supprimez l'enctype + method.
+               ============================================ -->
+          <form action="mailto:weus.franck@orange.fr"
+                method="POST"
+                enctype="text/plain"
+                id="formulaire-contact">
+
+            <div class="form-groupe">
+              <label for="prenom-nom">Votre nom et prénom *</label>
+              <input type="text" id="prenom-nom" name="nom" required placeholder="Ex : Marie Dupont" />
+            </div>
+
+            <div class="form-groupe">
+              <label for="email">Votre email *</label>
+              <input type="email" id="email" name="email" required placeholder="exemple@mail.fr" />
+            </div>
+
+            <div class="form-groupe">
+              <label for="sujet">Objet de votre message</label>
+              <select id="sujet" name="sujet">
+                <option value="">— Choisissez —</option>
+                <option value="inscription">Inscription au club</option>
+                <option value="tarifs">Question sur les tarifs</option>
+                <option value="essai">Cours d'essai</option>
+                <option value="competition">Compétition</option>
+                <option value="partenariat">Partenariat / Sponsoring</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-groupe">
+              <label for="message">Votre message *</label>
+              <textarea id="message" name="message" required
+                        placeholder="Décrivez votre demande ici..."></textarea>
+            </div>
+
+            <div class="rgpd-info">
+              🔒 <strong>Confidentialité :</strong> Les informations que vous saisissez dans ce formulaire sont utilisées uniquement pour répondre à votre demande. Elles ne sont pas transmises à des tiers. Conformément au RGPD, vous pouvez demander leur suppression à tout moment.
+            </div>
+
+            <div style="margin-top:1.25rem;">
+              <button type="submit" class="btn btn-rouge">Envoyer le message</button>
+            </div>
+
+          </form>
+
+          <div style="margin-top:2rem;padding:1.25rem;background:var(--gris-clair);border-radius:4px;">
+            <p style="font-size:0.88rem;color:var(--gris);">
+              💡 Le formulaire ouvrira votre application mail. Si vous préférez écrire directement :
+              <a href="mailto:weus.franck@orange.fr"><strong>weus.franck@orange.fr</strong></a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Coordonnées -->
+        <div>
+          <h2 style="margin-bottom:1.5rem;">Coordonnées</h2>
+
+          <div style="display:flex;flex-direction:column;gap:1.25rem;">
+
+            <div style="background:#fff;padding:1.25rem;border-radius:4px;box-shadow:0 2px 10px rgba(0,0,0,0.08);display:flex;gap:1rem;align-items:flex-start;">
+              <div style="font-size:1.8rem;line-height:1;">📍</div>
+              <div>
+                <strong>Espace Cordouan</strong><br>
+                Royan<br>
+                17200
+              </div>
+            </div>
+
+            <div style="background:#fff;padding:1.25rem;border-radius:4px;box-shadow:0 2px 10px rgba(0,0,0,0.08);display:flex;gap:1rem;align-items:center;">
+              <div style="font-size:1.8rem;line-height:1;">📧</div>
+              <div>
+                <strong>Email</strong><br>
+                <a href="mailto:weus.franck@orange.fr">weus.franck@orange.fr</a>
+              </div>
+            </div>
+
+            <div style="background:#fff;padding:1.25rem;border-radius:4px;box-shadow:0 2px 10px rgba(0,0,0,0.08);display:flex;gap:1rem;align-items:center;">
+              <div style="font-size:1.8rem;line-height:1;">📞</div>
+              <div>
+                <strong>Téléphone</strong><br>
+                <!-- Remplacez par le vrai numéro -->
+                <a href="tel:+33661595142">06 61 59 51 42</a>
+              </div>
+            </div>
+
+            <div style="background:#fff;padding:1.25rem;border-radius:4px;box-shadow:0 2px 10px rgba(0,0,0,0.08);display:flex;gap:1rem;align-items:center;">
+              <div style="font-size:1.8rem;line-height:1;">📘</div>
+              <div>
+                <strong>Facebook</strong><br>
+                <!-- Remplacez par votre vrai lien Facebook -->
+                <a href="https://www.facebook.com/profile.php?id=100063596177663" target="_blank" rel="noopener">
+                  facebook.com/ROCBoxe
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top:2rem;padding:1.25rem;background:var(--gris-clair);border-radius:4px;">
+            <h4 style="margin-bottom:0.5rem;">⏰ Permanences</h4>
+            <!-- Remplacez par les vraies heures de permanence -->
+            <p style="font-size:0.9rem;color:var(--gris);">Nous sommes joignables pendant les créneaux d'entraînement ou par email à tout moment.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie photos -->
+  <section class="section section-gris">
+    <div class="container">
+      <div class="section-titre">
+        <h2>Galerie photos</h2>
+      </div>
+
+      <!-- =====================================================
+           GALERIE PHOTOS
+           
+           POUR AJOUTER UNE PHOTO :
+           1. Copiez le fichier dans assets/images/
+           2. Copiez une ligne <img ...> ci-dessous
+           3. Changez src="..." avec le nom de votre fichier
+           4. Changez alt="..." avec une description de la photo
+           
+           Cliquez sur une photo pour l'agrandir.
+           ===================================================== -->
+      <div class="galerie-grille">
+
+        <img src="assets/images/combat_arthur.jpg"
+             alt="Combat de boxe Arthur au ROC Boxe" />
+
+        <img src="assets/images/entrainements_1.png"
+             alt="Séance d'entraînement ROC Boxe" />
+
+        <img src="assets/images/entrainements_2.png"
+             alt="Entraînement collectif ROC Boxe Royan" />
+
+        <img src="assets/images/entrainement_filles.jpg"
+             alt="Cours de boxe féminin ROC Boxe" />
+
+        <img src="assets/images/etirement_filles.jpg"
+             alt="Étirements après entraînement féminin ROC Boxe" />
+
+        <img src="assets/images/petits_collectif.jpg"
+             alt="Enfants au ROC Boxe Royan" />
+
+        <img src="assets/images/chess_boxing.jpg"
+             alt="Chess-boxing à la salle ROC Boxe" />
+
+        <img src="assets/images/chess_boxing_djai.jpg"
+             alt="Djaï en compétition de chess-boxing" />
+
+        <img src="assets/images/makan_entre.jpg"
+             alt="Entrée en scène ROC Boxe gala" />
+
+        <img src="assets/images/photo_mikan.jpg"
+             alt="Boxeur ROC Boxe en compétition" />
+
+        <img src="assets/images/photo_mika_djay_charly_combat.jpg"
+             alt="Combat gala ROC Boxe" />
+
+        <img src="assets/images/remise_medailles.jpg"
+             alt="Remise de médailles tournoi international" />
+
+        <img src="assets/images/angelo_champion_de_france.jpg"
+             alt="Angelo champion de France de boxe" />
+
+        <img src="assets/images/petits_collectif_diplomes.jpg"
+             alt="Remise de diplômes BEA enfants ROC Boxe" />
+
+        <img src="assets/images/photo_collective.jpg"
+             alt="Photo collective ROC Boxe saison" />
+
+        <img src="assets/images/plan_large_gala.jpg"
+             alt="Vue large du gala de boxe ROC Boxe" />
+
+        <img src="assets/images/entrainement_1.jpg"
+             alt="Entraînement salle ROC Boxe Royan" />
+
+        <img src="assets/images/entrainement_clasique.jpg"
+             alt="Entraînement classique à la salle" />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox (s'ouvre quand on clique sur une photo) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Photo agrandie">
+    <button class="lightbox-fermer" id="lightbox-fermer" aria-label="Fermer">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grille">
+        <div class="footer-col footer-logo">
+          <img src="assets/images/logo_roc_boxe.png" alt="Logo ROC Boxe" />
+          <p>Club associatif de boxe anglaise à Royan, Charente-Maritime.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="club.html">Le Club</a>
+          <a href="horaires.html">Horaires</a>
+          <a href="inscriptions.html">Inscriptions</a>
+          <a href="actualites.html">Actualités</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 Espace Cordouan, Royan, 17200</p>
+          <p>📧 <a href="mailto:weus.franck@orange.fr">weus.franck@orange.fr</a></p>
+          <p>📞 <a href="tel:+33661595142">06 61 59 51 42</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Suivez-nous</h4>
+          <a href="https://www.facebook.com/profile.php?id=100063596177663" target="_blank" rel="noopener">📘 Facebook ROC Boxe</a>
+          <a href="inscriptions.html">💳 S'inscrire sur HelloAsso</a>
+        </div>
+      </div>
+      <div class="footer-bas">
+        <span>© 2025 ROC Boxe Royan — Tous droits réservés</span>
+        <span>Site réalisé par des bénévoles</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

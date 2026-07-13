@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement en ligne — ROC Boxe Royan</title>
+  <meta name="description" content="Réglez votre adhésion, un stage, un don ou vos achats boutique en ligne, en toute sécurité via HelloAsso.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Paiement en ligne — ROC Boxe Royan">
+  <meta property="og:description" content="Paiements sécurisés via HelloAsso : adhésion, stage, don, boutique.">
+  <meta property="og:image" content="https://www.rocboxe-royan.fr/assets/images/og-image.jpg">
+  <meta property="og:url" content="https://www.rocboxe-royan.fr/paiement.html">
+  <meta name="theme-color" content="#16161a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Paiement en ligne</h1>
+        <p>Réglez facilement et en toute sécurité grâce à HelloAsso.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="helloasso-note">
+          <strong>Vos paiements sont 100 % sécurisés.</strong> Le ROC Boxe Royan
+          utilise HelloAsso, la solution de paiement gratuite dédiée aux associations.
+          Vous serez redirigé vers une page sécurisée et recevrez un reçu par email.
+          HelloAsso ne prélève aucune commission au club.
+        </div>
+
+        <div class="section-head">
+          <span class="eyebrow">Choisissez</span>
+          <h2>Que souhaitez-vous régler ?</h2>
+          <p>Chaque bouton renvoie vers le lien HelloAsso correspondant
+             (modifiable dans <code>config.js</code>). Un bouton sans lien
+             configuré disparaît automatiquement.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card pay-card">
+            <h3>Adhésion saison</h3>
+            <p>Réglez votre cotisation annuelle et votre licence.</p>
+            <a class="btn btn--primary" data-helloasso="adhesion" href="#">Payer mon adhésion</a>
+          </div>
+
+          <div class="card pay-card">
+            <h3>Stage / événement</h3>
+            <p>Inscrivez-vous à un stage ou à un événement du club.</p>
+            <a class="btn btn--primary" data-helloasso="stage" href="#">S'inscrire au stage</a>
+          </div>
+
+          <div class="card pay-card">
+            <h3>Faire un don</h3>
+            <p>Soutenez le club et bénéficiez d'un reçu fiscal.</p>
+            <a class="btn btn--primary" data-helloasso="don" href="#">Faire un don</a>
+          </div>
+
+          <div class="card pay-card">
+            <h3>Boutique</h3>
+            <p>Commandez les équipements et goodies aux couleurs du club.</p>
+            <a class="btn btn--primary" data-helloasso="boutique" href="#">Accéder à la boutique</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horaires — ROC Boxe Royan</title>
+  <meta name="description" content="Planning des entraînements de boxe au ROC Boxe Royan. Horaires pour enfants, ados, adultes, loisirs et compétiteurs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Scroll horizontal sur mobile pour le tableau */
+    .tableau-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .tableau-horaires {
+      min-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/logo_roc_boxe.png" alt="Logo ROC Boxe" />
+        <span>ROC Boxe</span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="club.html">Le Club</a></li>
+          <li><a href="horaires.html">Horaires</a></li>
+          <li><a href="inscriptions.html">Inscriptions</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div style="background:var(--noir);padding:3rem 0;text-align:center;">
+    <div class="container">
+      <h1 style="color:#fff;">Horaires & Planning</h1>
+      <p style="color:#aaa;margin-top:0.5rem;">Saison 2025–2026</p>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       TABLEAU DES HORAIRES
+       
+       COMMENT MODIFIER UN HORAIRE :
+       Trouvez la cellule <td> correspondant au jour et à la
+       tranche horaire, puis modifiez le texte et les badges.
+       
+       Les badges (étiquettes colorées) :
+       - badge-rouge   → Pros / Élites
+       - badge-bleu    → BEA (enfants)
+       - badge-vert    → Amateurs
+       - badge-orange  → Loisirs
+       ===================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-titre">
+        <h2>Planning des entraînements</h2>
+      </div>
+
+      <div class="tableau-wrapper">
+        <table class="tableau-horaires">
+          <thead>
+            <tr>
+              <th>Horaires</th>
+              <th>Lundi</th>
+              <th>Mardi</th>
+              <th>Mercredi</th>
+              <th>Jeudi</th>
+              <th>Vendredi</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td><strong>10h30 – 12h00</strong></td>
+              <td>—</td>
+              <td>—</td>
+              <td><span class="badge badge-rouge">Pros / Élites</span></td>
+              <td>—</td>
+              <td><span class="badge badge-rouge">Pros / Élites</span></td>
+            </tr>
+
+            <tr>
+              <td><strong>11h00 – 12h30</strong></td>
+              <td><span class="badge badge-rouge">Pros / Élites</span></td>
+              <td><span class="badge badge-rouge">Pros / Élites</span></td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+
+            <tr>
+              <td><strong>14h00 – 17h30/45</strong></td>
+              <td><span class="badge badge-rouge">Pros / Élites</span></td>
+              <td><span class="badge badge-rouge">Pros / Élites</span></td>
+              <td>—</td>
+              <td><span class="badge badge-rouge">Pros / Élites</span></td>
+              <td>—</td>
+            </tr>
+
+            <tr>
+              <td><strong>14h30 – 15h30</strong></td>
+              <td>—</td>
+              <td>—</td>
+              <td><span class="badge badge-bleu">BEA 7 à 10 ans</span></td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+
+            <tr>
+              <td><strong>16h00 – 17h30/45</strong></td>
+              <td>—</td>
+              <td>—</td>
+              <td><span class="badge badge-bleu">BEA 10 à 15 ans</span></td>
+              <td>—</td>
+              <td><span class="badge badge-rouge">Pros / Élites</span></td>
+            </tr>
+
+            <tr>
+              <td><strong>17h30 – 19h00</strong></td>
+              <td>—</td>
+              <td><span class="badge badge-bleu">BEA 10 à 15 ans</span></td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+
+            <tr>
+              <td><strong>18h00 – 19h30</strong></td>
+              <td><span class="badge badge-vert">Amateurs</span></td>
+              <td>—</td>
+              <td><span class="badge badge-vert">Amateurs</span></td>
+              <td><span class="badge badge-vert">Amateurs</span></td>
+              <td><span class="badge badge-vert">Amateurs</span></td>
+            </tr>
+
+            <tr>
+              <td><strong>19h30 – 21h00</strong></td>
+              <td><span class="badge badge-orange">Loisirs</span></td>
+              <td>—</td>
+              <td><span class="badge badge-orange">Loisirs</span></td>
+              <td>—</td>
+              <td><span class="badge badge-orange">Loisirs</span></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Légende -->
+      <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;">
+        <strong>Légende :</strong>
+        <span class="badge badge-rouge">Pros / Élites</span>
+        <span class="badge badge-bleu">BEA (enfants / ados)</span>
+        <span class="badge badge-vert">Amateurs</span>
+        <span class="badge badge-orange">Loisirs</span>
+      </div>
+
+      <p style="margin-top:1rem;font-size:0.88rem;color:var(--gris);">
+        ⚠️ Les horaires peuvent évoluer en cours de saison. Consultez notre page Facebook pour les mises à jour.
+      </p>
+    </div>
+  </section>
+
+  <!-- Description des groupes -->
+  <section class="section section-gris">
+    <div class="container">
+      <div class="section-titre">
+        <h2>Nos groupes</h2>
+      </div>
+      <div class="grille grille-2">
+
+        <div style="background:#fff;padding:1.5rem;border-radius:4px;border-left:4px solid var(--bleu);">
+          <h3 style="color:var(--bleu);margin-bottom:0.5rem;">BEA — 7 à 10 ans</h3>
+          <p>Boxe Éducative et d'Animation. Initiation ludique, apprentissage des fondamentaux dans le respect et la bonne humeur. Aucun contact violent.</p>
+        </div>
+
+        <div style="background:#fff;padding:1.5rem;border-radius:4px;border-left:4px solid var(--bleu);">
+          <h3 style="color:var(--bleu);margin-bottom:0.5rem;">BEA — 10 à 15 ans</h3>
+          <p>Perfectionnement technique, préparation aux compétitions régionales BEA, développement physique et mental progressif.</p>
+        </div>
+
+        <div style="background:#fff;padding:1.5rem;border-radius:4px;border-left:4px solid var(--vert, #2e7d32);">
+          <h3 style="color:#2e7d32;margin-bottom:0.5rem;">Amateurs</h3>
+          <p>Entraînement structuré pour adultes visant la compétition ou souhaitant progresser techniquement avec des sparrings encadrés.</p>
+        </div>
+
+        <div style="background:#fff;padding:1.5rem;border-radius:4px;border-left:4px solid #e65100;">
+          <h3 style="color:#e65100;margin-bottom:0.5rem;">Loisirs</h3>
+          <p>La boxe sans la compétition. Cardio, technique, défoulement. Idéal pour se remettre en forme ou découvrir la boxe dans une ambiance détendue.</p>
+        </div>
+
+        <div style="background:#fff;padding:1.5rem;border-radius:4px;border-left:4px solid var(--rouge);">
+          <h3 style="color:var(--rouge);margin-bottom:0.5rem;">Pros / Élites</h3>
+          <p>Entraînements intensifs pour boxeurs de haut niveau, professionnels et élites. Sur sélection et invitation des entraîneurs.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Adresse et carte -->
+  <section class="section">
+    <div class="container">
+      <div class="section-titre">
+        <h2>Où nous trouver ?</h2>
+      </div>
+
+      <div class="grille grille-2" style="align-items:start;gap:3rem;">
+        <div>
+          <!-- ============================================
+               MODIFIEZ l'adresse ci-dessous
+               ============================================ -->
+          <h3 style="margin-bottom:1rem;">Adresse de la salle</h3>
+          <p>📍 <strong>Espace Cordouan</strong><br>Royan<br>17200 Charente-Maritime</p>
+          <p style="margin-top:1rem;">🚗 Parking disponible à proximité.<br>🚲 Accessible à vélo.</p>
+          <div style="margin-top:1.5rem;">
+            <!-- Remplacez le lien par un lien Google Maps réel vers la salle -->
+            <a href="https://maps.google.com/?q=Royan+17200" target="_blank" rel="noopener" class="btn btn-rouge">
+              Ouvrir dans Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Carte Google Maps intégrée -->
+        <!-- ============================================
+             POUR INTÉGRER LA VRAIE CARTE :
+             1. Allez sur maps.google.com
+             2. Cherchez l'adresse de la salle
+             3. Cliquez sur Partager > Intégrer une carte
+             4. Copiez le code <iframe> et remplacez celui ci-dessous
+             ============================================ -->
+        <div style="border-radius:4px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22320!2d-1.0334!3d45.6227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd551f6e0f3f3f3f%3A0x0!2sRoyan%2C+France!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
+            width="100%"
+            height="350"
+            style="border:0;display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Carte de localisation de la salle ROC Boxe à Royan">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-rouge">
+    <div class="container texte-centre">
+      <h2 style="color:#fff;margin-bottom:1rem;">Venez à un cours d'essai gratuit</h2>
+      <p style="color:rgba(255,255,255,0.9);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;">
+        Pas besoin de matériel pour commencer. Présentez-vous simplement à la salle pendant un créneau qui vous convient.
+      </p>
+      <a href="contact.html" class="btn btn-blanc">Nous contacter</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grille">
+        <div class="footer-col footer-logo">
+          <img src="assets/images/logo_roc_boxe.png" alt="Logo ROC Boxe" />
+          <p>Club associatif de boxe anglaise à Royan, Charente-Maritime.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="club.html">Le Club</a>
+          <a href="horaires.html">Horaires</a>
+          <a href="inscriptions.html">Inscriptions</a>
+          <a href="actualites.html">Actualités</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 Espace Cordouan, Royan, 17200</p>
+          <p>📧 <a href="mailto:weus.franck@orange.fr">weus.franck@orange.fr</a></p>
+          <p>📞 <a href="tel:+33661595142">06 61 59 51 42</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Suivez-nous</h4>
+          <a href="https://www.facebook.com/profile.php?id=100063596177663" target="_blank" rel="noopener">📘 Facebook ROC Boxe</a>
+          <a href="inscriptions.html">💳 S'inscrire sur HelloAsso</a>
+        </div>
+      </div>
+      <div class="footer-bas">
+        <span>© 2025 ROC Boxe Royan — Tous droits réservés</span>
+        <span>Site réalisé par des bénévoles</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
